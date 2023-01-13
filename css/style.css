@@ -1,0 +1,179 @@
+/*:root {
+  --azul: #abe215;
+  --blanco: #fff;
+  --naranja: #ff4f1e;
+}*/
+html {
+  font-size: 62.5%; /** 1REM = 10pX */
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--azul);
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  /*border: 2px dashed red;*/
+}
+/*section {
+  height: 100vh;
+  width: 100%;
+  padding: 6em;
+  box-sizing: border-box;
+  color: aliceblue;
+  border: 2px dashed red;
+}*/
+img {
+  max-width: 100%;
+  display: block;
+}
+[data-scroll] {
+  transition: all 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-700px);
+}
+/*#info {
+  background-color: rgba(0, 0, 0, 0.555);
+  padding: 10px 15px 15px 15px;
+  margin: 100px 5px 5px 5px;
+  border-radius: 8px;
+  margin-left: 100px;
+}*/
+h4 {
+  font-size: 6em;
+  color: black;
+}
+#titulo {
+  margin-top: 20px;
+  position: absolute;
+  z-index: 5;
+  margin-left: 15px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#webpack {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /*border: dashed 2px blue;*/
+  z-index: 15;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 320px;
+  margin-top: 50px;
+  background-color: rgba(197, 252, 96, 0.411);
+  cursor: pointer;
+}
+#ecosistemaVentajas {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /*border: dashed 2px blue;*/
+  z-index: 15;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 320px;
+  margin-top: 50px;
+  background-color: rgba(197, 252, 96, 0.411);
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 120px;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  z-index: 15;
+  margin-left: 250px;
+  font-size: 12px;
+}
+p {
+  width: 50%;
+  opacity: 0.8;
+  line-height: 1.5em;
+  font-size: 1em;
+  position: absolute;
+  color: #efefef;
+  z-index: 5;
+  margin-left: -100px;
+  margin-top: -100px;
+  padding-top: -70px;
+  padding: 0px 50px 50px;
+  /*border: blue dashed 1px;*/
+}
+#beneficios {
+  width: 50%;
+  opacity: 0.8;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  position: absolute;
+  color: #efefef;
+  z-index: 5;
+  margin-top: 100px;
+  /*border: blue dashed 1px;*/
+}
+columna {
+  background-color: #fff;
+  height: 20rem;
+  font-size: 4rem;
+  padding-top: 8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#consulta {
+  margin-left: 50px;
+}
+#ecosistema {
+  position: absolute;
+  margin-top: 50px;
+  z-index: 7;
+  color: yellowgreen;
+  margin-left: 15px;
+}
+#ecosistemaVentajas {
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #beneficios {
+    font-size: 12px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #beneficios {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  ...;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  ...;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  ...;
+}
